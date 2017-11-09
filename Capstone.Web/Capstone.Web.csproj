@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB84D678-4BD1-4585-A956-7079BBB6CAA6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capstone.Web</RootNamespace>
+    <AssemblyName>Capstone.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\5-star.png" />
+    <Content Include="Content\Images\backpack.png" />
+    <Content Include="Content\Images\backpack2.jpg" />
+    <Content Include="Content\Images\CarouselImages\blackBears.png" />
+    <Content Include="Content\Images\CarouselImages\buffalo.png" />
+    <Content Include="Content\Images\CarouselImages\cliffHeart.png" />
+    <Content Include="Content\Images\CarouselImages\jumpingGirls.png" />
+    <Content Include="Content\Images\CarouselImages\lakeMcDonaldNight.png" />
+    <Content Include="Content\Images\CarouselImages\mountainCouple.png" />
+    <Content Include="Content\Images\CarouselImages\mountainFeet.png" />
+    <Content Include="Content\Images\CarouselImages\mountainView.png" />
+    <Content Include="Content\Images\CarouselImages\nighttimeArch.png" />
+    <Content Include="Content\Images\CarouselImages\snappingTurtle.png" />
+    <Content Include="Content\Images\CarouselImages\trail.png" />
+    <Content Include="Content\Images\CarouselImages\waterfallLarge.png" />
+    <Content Include="Content\Images\CarouselImages\waterfallSmall.png" />
+    <Content Include="Content\Images\CarouselImages\yellowStone.png" />
+    <Content Include="Content\Images\FinishedMaps\CVNP.png" />
+    <Content Include="Content\Images\FinishedMaps\ENP.png" />
+    <Content Include="Content\Images\FinishedMaps\GCNP.png" />
+    <Content Include="Content\Images\FinishedMaps\GNP.png" />
+    <Content Include="Content\Images\FinishedMaps\GSMNP.png" />
+    <Content Include="Content\Images\FinishedMaps\GTNP.png" />
+    <Content Include="Content\Images\FinishedMaps\ResizedImages\CVNP.png" />
+    <Content Include="Content\Images\FinishedMaps\ResizedImages\ENP.png" />
+    <Content Include="Content\Images\FinishedMaps\ResizedImages\RMNP.png" />
+    <Content Include="Content\Images\FinishedMaps\ResizedImages\YNP.png" />
+    <Content Include="Content\Images\FinishedMaps\ResizedImages\YNP2.png" />
+    <Content Include="Content\Images\FinishedMaps\RMNP.png" />
+    <Content Include="Content\Images\FinishedMaps\MRNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\CVNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\ENP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\firewatch_inspired_art_by_rizzlepixs-d9qhibd.jpg" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\GCNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\GNP.jpg" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\GNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\grand-teton-map.jpg" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\GSMNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\GTNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\yellow.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_MammothHotSprings.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_OldFaithful.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_WestThumb.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\minimalist_art_style_landscape_by_dr_sandvich-d9nlxfo.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\ModelImages\YNP_OldFaithful_Accommodations.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\ModelImages\YNP_OldFaithful_InterestingFacts.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\ModelImages\YNP_OldFaithful_POI.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\ModelImages\YNP_OldFaithful_YouAreHere.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\MRNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\RMNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\SwwAR3q.jpg" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\YNP.png" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\YNP2.png" />
+    <Content Include="Content\Images\FinishedMaps\YNP.png" />
+    <Content Include="Content\Images\FinishedMaps\YNP2.png" />
+    <Content Include="Content\Images\geek.png" />
+    <Content Include="Content\Images\icons\appleStore.png" />
+    <Content Include="Content\Images\icons\appleStore2.png" />
+    <Content Include="Content\Images\icons\Contact-Us.jpg" />
+    <Content Include="Content\Images\icons\emergency.png" />
+    <Content Include="Content\Images\icons\emergency2.png" />
+    <Content Include="Content\Images\icons\feature-icon1.png" />
+    <Content Include="Content\Images\icons\feature-icon7.png" />
+    <Content Include="Content\Images\icons\googlePlay.png" />
+    <Content Include="Content\Images\icons\googlePlay2.png" />
+    <Content Include="Content\Images\icons\gps.png" />
+    <Content Include="Content\Images\icons\gps2.png" />
+    <Content Include="Content\Images\icons\Info.png" />
+    <Content Include="Content\Images\icons\Info2.png" />
+    <Content Include="Content\Images\icons\map-icon.png" />
+    <Content Include="Content\Images\icons\map.png" />
+    <Content Include="Content\Images\icons\map2.png" />
+    <Content Include="Content\Images\icons\mockUp.png" />
+    <Content Include="Content\Images\icons\mockUp2.png" />
+    <Content Include="Content\Images\icons\share.png" />
+    <Content Include="Content\Images\icons\share2.png" />
+    <Content Include="Content\Images\icons\TELogo.jpg" />
+    <Content Include="Content\Images\icons\TELogo.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\parks\cvnp.jpg" />
+    <Content Include="Content\Images\parks\cvnp.png" />
+    <Content Include="Content\Images\parks\cvnp1.png" />
+    <Content Include="Content\Images\parks\enp.jpg" />
+    <Content Include="Content\Images\parks\enp.png" />
+    <Content Include="Content\Images\parks\gcnp.jpg" />
+    <Content Include="Content\Images\parks\gcnp.png" />
+    <Content Include="Content\Images\parks\gnp.jpg" />
+    <Content Include="Content\Images\parks\gnp.png" />
+    <Content Include="Content\Images\parks\gsmnp.jpg" />
+    <Content Include="Content\Images\parks\gsmnp.png" />
+    <Content Include="Content\Images\parks\gtnp.jpg" />
+    <Content Include="Content\Images\parks\gtnp.png" />
+    <Content Include="Content\Images\parks\mrnp.jpg" />
+    <Content Include="Content\Images\parks\mrnp.png" />
+    <Content Include="Content\Images\parks\ofBackground.jpg" />
+    <Content Include="Content\Images\parks\rmnp.jpg" />
+    <Content Include="Content\Images\parks\rmnp.png" />
+    <Content Include="Content\Images\parks\ynp.jpg" />
+    <Content Include="Content\Images\parks\ynp.png" />
+    <Content Include="Content\Images\parks\ynp2.jpg" />
+    <Content Include="Content\Images\parks\ynp2.png" />
+    <Content Include="Content\Images\scenery.png" />
+    <Content Include="Content\Images\weatherGifs\cloudy.gif" />
+    <Content Include="Content\Images\weatherGifs\partly cloudy.gif" />
+    <Content Include="Content\Images\weatherGifs\rain.gif" />
+    <Content Include="Content\Images\weatherGifs\snow.gif" />
+    <Content Include="Content\Images\weatherGifs\thunderstorms.gif" />
+    <Content Include="Content\Images\weatherGifs\sunny.gif" />
+    <Content Include="Content\Images\weather\cloudy.png" />
+    <Content Include="Content\Images\weather\partly cloudy.png" />
+    <Content Include="Content\Images\weather\rain.png" />
+    <Content Include="Content\Images\weather\snow.png" />
+    <Content Include="Content\Images\weather\sunny.png" />
+    <Content Include="Content\Images\weather\thunderstorms.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_MammothHotSprings.psd" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_OldFaithful.psd" />
+    <Content Include="Content\Images\FinishedMaps\Trailguides\Markers\YNP_WestThumb.psd" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SurveyController.cs" />
+    <Compile Include="DAL\ISurveyDAL.cs" />
+    <Compile Include="DAL\IParksDAL.cs" />
+    <Compile Include="DAL\ParksDAL.cs" />
+    <Compile Include="DAL\SurveyDAL.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Park.cs" />
+    <Compile Include="Models\ParkWeather.cs" />
+    <Compile Include="Models\Survey.cs" />
+    <Compile Include="Models\SurveyResult.cs" />
+    <Compile Include="Models\SurveyResultVM.cs" />
+    <Compile Include="Models\Weather.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\ParkDetails.cshtml" />
+    <Content Include="Views\Survey\Survey.cshtml" />
+    <Content Include="Views\Survey\SurveyResult.cshtml" />
+    <Content Include="Views\Home\CompanionApp.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Home\EducationPartnership.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55601</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55601/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

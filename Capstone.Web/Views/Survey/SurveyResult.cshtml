@@ -1,0 +1,28 @@
+﻿@using Capstone.Web.Models;
+@model SurveyResultVM
+
+@{
+    ViewBag.Title = "SurveyResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container surverResultBackground">
+    <h2 class="survey2">Survey Results</h2><br />
+    @foreach (SurveyResult s in Model.ListAllSurveys)
+    {
+        double percent = ((double)s.NumberOfVotes / Model.TotalSurveys) * 100;
+        percent = Math.Round(percent, 2);
+
+        <div class="survey">
+            <h2 class="survey-text">
+                @s.ParkName
+            </h2>
+            <img class="surveyImage" src="@Url.Content("~/Content/Images/parks/" + s.ParkCode + ".jpg")" />
+        </div>
+        <div class="survey">
+            <p class="surveyP">@percent%</p>
+        </div>
+
+    }
+</div>

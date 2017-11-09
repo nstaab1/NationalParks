@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "CompanionApp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    
+    <div class="container">
+        <h2 class="explanation">Available on Android and iOS</h2>
+
+        <h3 class="explanation">
+            Next time you are in one of our supported national parks take the Trailblazer&#8482; app with you.
+            Trailblazer&#8482; puts detailed location information at your fingertips. Scan a marker near you
+            and you will see information detailing your location, historical facts about that location and a small
+            list of signigicant sites near you.
+        </h3><br />
+        <div>
+            <div class="quote col-md-6">
+                <p class="joshQuote">
+                    &#8220;I don't know what I did before this app. I feel like<br />
+                    I've just been handed a National Parks easy button&#8221;<br />
+                </p>
+                <h4 class="josh">Josh Tucholski | Local Vodka Baron</h4>
+                <div>
+                    <img class="stars" src="@Url.Content("~/Content/Images/5-star.png")" />
+                </div>
+                <div class="storeBtns">
+                    <a href="https://itunes.apple.com/us/app/id341285480?mt=7"><img src="@Url.Content("~/Content/Images/icons/appleStore2.png")" /></a><br /><br />
+                    <a href="http://play.google.com/store/apps/details?id=<package_name>"><img src="@Url.Content("~/Content/Images/icons/googlePlay2.png")" /></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="@Url.Content("~/Content/Images/icons/mockUp2.png")" />
+            </div>
+        </div><br />
+    </div>
+
+    <div class="container-fluid m">
+        <h1 class="key">
+            Key Features
+        </h1><br /><br />
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="appPage">
+                    <li>
+                        <img src="@Url.Content("~/Content/Images/icons/map2.png")" />
+                        <div>
+                            Dynamic Map
+                            <p>
+                                Get updated location depending on the location you scan in.
+                                Pin the map as you move towards points of interest.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Content/Images/icons/gps2.png")" />
+                        <div>
+                            GPS Coordinates
+                            <p>
+                                Have access to your GPS cooridinates at all times.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Content/Images/icons/emergency2.png")" />
+                        <div>
+                            Emergency Response
+                            <p>
+                                Park Services are a click away. Your GPS location info will be sent
+                                to an emergency responder to help them get to you sooner.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="appPage">
+                    <li>
+                        <img src="@Url.Content("~/Content/Images/icons/info2.png")" />
+                        <div>
+                            History and Information
+                            <p>
+                                Access historical facts, site information and trail Info at your location.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@Url.Content("~/Content/Images/icons/share2.png")" />
+                        <div>
+                            Share your experiences with your friends
+                            <p>
+                                Track and share your walk with your friends and family.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

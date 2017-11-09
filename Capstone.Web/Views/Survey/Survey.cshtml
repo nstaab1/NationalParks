@@ -1,0 +1,45 @@
+﻿@using Capstone.Web.Models;
+@model Survey
+@{
+    ViewBag.Title = "Survey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="formBackground">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <div class="formContainer">
+                    <h2>Take our daily survey!</h2>
+                    <p><strong>We value the feedback of our guests. Please take a minute to share which park is your favorite. At the end of the survey you will be able to see which parks other people have voted for.</strong></p><br /><br />
+                    <div class="formStyle">
+                        <form action="@Url.Action("Survey","Survey")" method="post">
+                            <div class="form-group">
+                                <label for="ParkCode">Favorite National Park</label><br />
+                                @Html.DropDownListFor(m => m.ParkCode, Survey.Parks, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.EmailAddress)<br />
+                                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", required = "required" })
+                            </div>
+                            <div class="form-group">
+                                <label for="State">State of Residence</label><br />
+                                @Html.DropDownListFor(m => m.State, Survey.States, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label>Activity Level:</label> <br />
+                                @Html.RadioButton("ActivityLevel", "inactive", new { required = "required" })<label> Inactive</label>
+                                @Html.RadioButton("ActivityLevel", "sedentary")<label> Sedentary</label>
+                                @Html.RadioButton("ActivityLevel", "active")<label> Active</label><br />
+                                @Html.RadioButton("ActivityLevel", "extremely active")<label> Extremely Active</label>
+                            </div>
+                            <button class="btn btn-primary surveyButton">Submit!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

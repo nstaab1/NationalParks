@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TrailPartners</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Crimson+Text|Josefin+Slab|Lobster|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Trail Partners Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Take Our Survey", "Survey", "Survey", new { area = "" }, new { @class = "nav-item" })</li>
+                    <li>@Html.ActionLink("Download Our Campanion App", "CompanionApp", "Home", new { area = "" }, new { @class = "nav-item" })</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div>
+                <ul class="foot">
+                    <li class="footer">@Html.ActionLink("Contact Us", "ContactUs", "Home") &nbsp; |</li>
+                    <li>@Html.ActionLink("Education Partnerships", "EducationPartnership", "Home") &nbsp; |</li>
+                    <li>&#9400; 1990-2017 TrailPartners.com, Inc. or its affiliates</li>
+                </ul>                
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>

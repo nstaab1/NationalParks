@@ -1,0 +1,502 @@
+﻿/*
+font-family: 'Open Sans Condensed', sans-serif; 
+font-family: 'Crimson Text', serif; 
+font-family: 'Abel', sans-serif; 
+font-family: 'Lobster', cursive; 
+font-family: 'Amatic SC', cursive; 
+font-family: 'Josefin Slab', serif;
+*/
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input, select, textarea {
+    max-width: 280px;
+}
+
+.weatherForecastSmall {
+    height: 80px;
+}
+
+/*for detail page*/
+.description {
+    display: inline-block;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+.detailImageDiv {
+    text-align: center;
+}
+
+.detailImage {
+    max-width: 100%;
+    /*height: auto;*/
+}
+
+p.detailText {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+.indexParkName.detailPage {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+blockquote {
+    font-family: 'Crimson Text', serif;
+}
+
+.row.well.detailText {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+}
+
+.about {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+}
+
+.detailBackground {
+    background-color: #c3c5c9;
+}
+
+.detailMargin {
+    padding: 10px 2%;
+}
+
+.detailMargin2 {
+    background-color: #d9dadd;
+    box-shadow: 10px 0px 5px #888888;
+    padding: 10px 2%;
+}
+
+.container-fluid.body-content {
+    padding: 0px;
+}
+
+
+
+/*WEATHER STYLING*/
+.fullWeather{
+    background-color:white;
+    width: 100%;
+}
+
+.weatherBorder{
+    border-radius: 15px;
+}
+
+#forecastHeader {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.weatherBoxStyle {
+    text-align: center;
+    background-color: #163870;
+    color: white;
+    border-radius: 20px;
+    margin: 0% 3%;
+    
+}
+
+.celsiusButton {
+    text-align: center;
+}
+
+
+.tempButtonStyle {
+    color =
+}
+.a {
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+}
+
+h5.a {
+    font-size: 18px;
+}
+
+.centerModal {
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+/*Survey Results*/
+.survey-text {
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+}
+.survey img{
+    max-width:35%;
+}
+h2.survey{
+   margin: auto;
+}
+.survey {
+    display: inline-block;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.survey2 {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+.survey p{    
+    font-size:500%;
+    font-weight:bold;
+}
+
+/*download page*/
+.josh {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+.joshQuote {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size:x-large;
+}
+.quote{
+    padding-top: 2%;
+}
+.stars {
+    max-width: 200px;
+}
+.storeBtns {
+    padding-top:10%;
+}
+.m {
+    background-color:darkgray;
+    margin-bottom:0px;
+}
+ul {
+    list-style-type: none;
+}
+.key{
+    text-align:center;
+    margin-top: 0px;
+}
+
+.explanation {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.appPage {
+    font-weight: bold;
+}
+.appPage p{
+    font-weight:normal;
+}
+
+/*Contact us page*/
+#contact img{
+    width: 100%;
+}
+
+.caption {
+    text-align:center;
+    position: absolute;
+    top: 45%;
+    right:5%;
+    width: 50%;
+}
+.caption-text {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size:500%;
+}
+/*Education Partnership*/
+
+.education {
+    font-weight: bold;
+    font-family: 'Crimson Text', serif;
+}
+h3.education{
+    
+    font-size: 200%;
+}
+
+/*Carousel Styling*/
+#myCarousel {
+    max-height: 600px;
+    margin-bottom: 40px;
+}
+
+.carousel .item img {
+    width: 100%; /*img width*/
+    max-height: 600px;
+    object-fit: cover;
+}
+
+
+/*Park index adjustments*/
+.parkListMargin {
+    margin: 20px 3%;
+}
+
+.well.indexwell {
+    height: 450px;
+    text-align: center;
+}
+
+.indexParkImage {
+    width: 300px;
+    border-radius: 8%;
+}
+
+
+
+
+/*Font and other adjustments on index*/
+.indexParkName {
+    font-size: 26px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.stateName {
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+
+.indexDescription {
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+}
+
+/*Nav bar adjustments*/
+.navbar-brand {
+    font-family: 'Abel', sans-serif;
+}
+
+.nav-item {
+    font-family: 'Abel', sans-serif;
+}
+/*Park Survey adjustments*/
+.surveyImage {
+    display: inline-block;
+}
+.surveyP {
+    display: inline-block;
+}
+
+.surverResultBackground {
+    background-color: #c6f0ff;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+}
+
+.formContainer p {
+    font-size: 20px;
+}
+
+.formContainer {
+    margin: 0% 10%;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+.formStyle {
+    background-color: #66ccff;
+    padding: 20px 0px;
+    border-radius: 15px;
+    border: 6px solid #607D8B;
+    font-size: 25px;
+    
+}
+
+.formBackground {
+    background: #ffffff url('Images/parks/ofBackground.jpg') no-repeat center top;
+    padding-bottom: 40px;
+    background-size: cover;
+}
+
+select#ParkCode, input#EmailAddress, select#State {
+    display: inline-block;
+
+}
+
+
+
+
+/*Footer*/
+footer li {
+    display: inline;
+}
+.foot{
+    text-align:center;
+}
+
+
+
+/*Media queries*/
+@media (max-width: 450px) {
+    .indexParkImage {
+        width: 200px;
+    }
+    .survey p {
+        font-size: 200%; 
+    }
+}
+
+@media (max-width: 1200px) {
+    #myCarousel {
+        max-height: 400px;
+    }
+
+    .carousel .item img {
+        max-height: 400px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .surveyImage {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .surveyImage {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .survey p {
+        font-size: 350%;
+    }
+
+    .survey-text {
+        font-size: 200%
+    }
+
+    .weatherBoxStyle {
+        margin-bottom: 30px;
+        padding: 10px 0px;
+    }
+
+}
+
+@media (min-width: 750px) {
+
+    .weatherBoxStyle {
+        padding: 10px 0px;
+    }
+}
+
+
+/* Trail Map Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    #myImg:hover {
+        opacity: 0.7;
+    }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal*/
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Zoom */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    background-color: white;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 50px !important;
+    opacity: .8 !important;
+    border-radius: 15px;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}

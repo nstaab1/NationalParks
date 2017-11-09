@@ -1,0 +1,225 @@
+﻿@using Capstone.Web.Models
+@model List<Park>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container-fluid">
+    @*Header Carousel*@
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+            <li data-target="#myCarousel" data-slide-to="9"></li>
+            <li data-target="#myCarousel" data-slide-to="10"></li>
+            <li data-target="#myCarousel" data-slide-to="11"></li>
+            <li data-target="#myCarousel" data-slide-to="12"></li>
+            <li data-target="#myCarousel" data-slide-to="13"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/buffalo.png" />
+                <div class="carousel-caption">
+
+                    <h3>Go Where the Buffalo Roam!</h3>
+                    <p>You can't see nature this close anywhere else.</p>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/cliffHeart.png" />
+                <div class="carousel-caption">
+
+                    <h3>Take Your Friends!</h3>
+                    <p>Go with your friends and fall in love with the view.</p>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/waterfallSmall.png" />
+                <div class="carousel-caption">
+                    <h3>See It All!</h3>
+                    <p>Everything from waterfalls to forests are here just waiting for you.</p>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/nighttimeArch.png" />
+                <div class="carousel-caption">
+                    <h3>Get Lost in the Stars!</h3>
+                    <p>Once you look up it's hard to look away from an unforgettable night sky.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/mountainView.png" />
+                <div class="carousel-caption">
+                    <h3>Majestic Mountains!</h3>
+                    <p>You don't get views like this in the city!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/blackBears.png" />
+                <div class="carousel-caption">
+                    <h3>The Bears Are Here Too!</h3>
+                    <p>The possibilities are endless for what you may find out there.</p>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/jumpingGirls.png" />
+                <div class="carousel-caption">
+                    <h3>Jump for Joy!</h3>
+                    <p>The fun is waiting for you. All you have to do is get here.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/lakeMcDonaldNight.png" />
+                <div class="carousel-caption">
+                    <h3>Alluring Landscapes!</h3>
+                    <p>Day or night you can find the beauty all around you.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/mountainFeet.png" />
+                <div class="carousel-caption">
+                    <h3>You'll Feel Like You're Soaring</h3>
+                    <p>Go up high and look at the world below. We promise you won't be disappointed.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/yellowStone.png" />
+                <div class="carousel-caption">
+                    <h3>Come See All the Quirks of Nature</h3>
+                    <p>You can't see anything this amazing and rare anywhere else!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/mountainCouple.png" />
+                <div class="carousel-caption">
+                    <h3>It's Like Nothing You Can Imagine!</h3>
+                    <p>This is where you'll find the warmest company and the most sincere beauty.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/waterfallLarge.png" />
+                <div class="carousel-caption">
+                    <h3>Go with the Flow!</h3>
+                    <p>When you see this you will appreciate every minute you spend here.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/trail.png" />
+                <div class="carousel-caption">
+                    <h3>It's the Road You Take That Matters</h3>
+                    <p>With thousands of miles of walkable trails its easy to find yourself out here.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="carouselImageg" src="~/Content/Images/CarouselImages/snappingTurtle.png" />
+                <div class="carousel-caption">
+                    <h3>Just Look Hard Enough!</h3>
+                    <p>You never know what will pop up.</p>
+                </div>
+            </div>
+        </div>
+       
+
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+</a>
+    </div>
+
+<div class="parkListMargin">
+    @*Park Display*@
+
+    <div class="row">
+
+        @for (int i = 0; i < Model.Count; i++)
+            {
+
+
+            <div class="col-xl- 3 col-lg-4 col-md-6 col-12 ">
+                <div class="well indexwell">
+                    <a href="@Url.Action("ParkDetails","Home", new { parkID = Model[i].ParkCode})">
+
+                        <img class="indexParkImage imageToggle " src="@Url.Content("~/Content/Images/parks/" + Model[i].ParkCode + ".jpg")" />
+                    </a>
+
+
+                    <h2 class="indexParkName">@Model[i].ParkName</h2>
+                    <h4 class="stateName">@Model[i].ParkState</h4>
+                    <p class="textRestrict indexDescription">@Model[i].FirstSentence(Model[i].ParkDescription)</p>
+                </div>
+            </div>
+
+
+        }
+
+    </div>
+
+</div>
+</div>
+
+<script>
+    $('document').ready(function () {
+
+        $('.imageToggle').on({
+            'mouseover': function () {
+                $(this).attr("src", $(this).attr("src").replace(".jpg", ".png"));
+            },
+            'mouseout': function () {
+                $(this).attr("src", $(this).attr("src").replace(".png", ".jpg"));
+            }
+        });
+
+
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
